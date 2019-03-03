@@ -1,0 +1,42 @@
+{
+  "annotations": [
+    {
+      "id": "3",
+      "line": "11",
+      "entries": [
+        {
+          "id": "1",
+          "start": "5",
+          "lemmata": ["Phoebum", "instruat"],
+          "entries": [
+            {
+              "id": "1",
+              "text": "Enjambment.",
+              "author": "M. Jean"
+            }
+          ]
+        },
+        {}
+      ]
+    },
+    {
+      "id": "4",
+      "line": "13",
+      "entries": [
+        {
+          "id": "1",
+          "start": "3",
+          "lemmata": ["puer,"],
+          "entries": [
+            {
+              "id": "1",
+              "text": "Cupid.",
+              "author": "M. Jean"
+            }
+          ]
+        },
+        {}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432"
+  backend:
+    build:
+      context: latintoolkit-backend
+      args:
+        UID: ${UID:-1001}
+    volumes:
+      - ./latintoolkit-backend:/usr/src/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    user: rails
+  frontend:
+    build:
+      context: latintoolkit-frontend
+      args:
+        UID: ${UID:-1001}
+    volumes:
+      - ./latintoolkit-frontend:/usr/src/app
+    ports:
+      - "3000:3000"
+    user: frontend
