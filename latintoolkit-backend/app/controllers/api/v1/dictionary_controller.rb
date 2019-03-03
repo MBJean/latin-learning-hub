@@ -8,7 +8,7 @@ class Api::V1::DictionaryController < Api::V1::BaseController
     @lemma = params[:lemma]
     @entry = Dictionary.find_by key: @lemma
     if @entry.nil?
-      render json: JSON.generate({ description: 'not found', id: nil })
+      render json: JSON.generate({ error: 'not_found', status: '404', id: nil })
     else
       render json: JSON.generate({ description: @entry['description'], id: @entry['id'] })
     end

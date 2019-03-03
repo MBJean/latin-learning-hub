@@ -12,13 +12,8 @@ export default {
     }
   },
   methods: {
-    async updateExamples() {
-      this.json = await this.$axios.$get('/text_lookup/ovid/metamorphoses/')
-      console.log(this.json);
-    }
   },
   mounted () {
-    this.updateExamples()
   }
 }
 </script>
