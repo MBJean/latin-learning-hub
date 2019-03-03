@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ['localhost:3000', 'https://api.latin-learning-hub.com']
+    origins ['localhost:3000', 'https://api.latinlearninghub.com']
 
     resource '*',
       headers: :any,

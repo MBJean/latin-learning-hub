@@ -1,5 +1,11 @@
 <template>
   <div>
+    <nav class="nav">
+      <div class="nav__inner">
+        <nuxt-link to="/" class="nav__header">The Latin Learning Hub</nuxt-link>
+      </div>
+    </nav>
+    <div class="nav__spacer"></div>
     <nuxt/>
   </div>
 </template>
@@ -35,32 +41,33 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.nav {
+  background-color: #fff;
+  border-bottom: 0.1rem solid #000;
+  height: 4rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.nav__spacer {
+  height: 0;
+  margin-bottom: 8rem;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.nav__inner {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.nav__header {
+  color: #000 !important;
+  font-size: 1rem;
+  text-decoration: none !important;
 }
 </style>
